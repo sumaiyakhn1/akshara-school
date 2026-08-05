@@ -133,7 +133,12 @@ Farm Pehowa, Dist. Kurukshetra
           <p>
             © 2026 Akshara International School. All Rights Reserved.
           </p>
-
+          <div className="footer-credit">
+    Crafted with <span className="heart">❤️</span> by{" "}
+    <strong>Okie Dokie</strong>
+    <br />
+    Haryana's No. 1 Campus Automation Partner
+  </div>
           <div>
 
             <Link to="/privacy-policy">
@@ -149,6 +154,7 @@ Farm Pehowa, Dist. Kurukshetra
           </div>
 
         </div>
+        
 
       </div>
 

@@ -1,10 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/images/logo2.png";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,63 +95,54 @@ function Header() {
 
               {/* Navigation */}
 
-              <nav className="main-nav">
-
+              {/* <nav className="main-nav"> */}
+<nav className={`main-nav ${menuOpen ? "active" : ""}`}>
                 <ul>
 
                   <li>
                     <Link
-                      className={
-                        location.pathname === "/"
-                          ? "active"
-                          : ""
-                      }
-                      to="/"
-                    >
-                      Home
-                    </Link>
+  to="/"
+  onClick={() => setMenuOpen(false)}
+  className={location.pathname === "/" ? "active" : ""}
+>
+  Home
+</Link>
                   </li>
 
                   <li>
-                    <Link
-                      className={
-                        location.pathname === "/about"
-                          ? "active"
-                          : ""
-                      }
-                      to="/about"
-                    >
-                      About Us
-                    </Link>
+                   <Link
+  to="/about"
+  onClick={() => setMenuOpen(false)}
+  className={location.pathname === "/about" ? "active" : ""}
+>
+  About Us
+</Link>
                   </li>
 
                   <li>
-                    <Link to="#">
+                    <Link to="#" onClick={() => setMenuOpen(false)}>
                       Facilities
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="#">
+                    <Link to="#" onClick={() => setMenuOpen(false)}>
                       Academics
                     </Link>
                   </li>
 
                   <li>
                     <Link
-                      className={
-                        location.pathname === "/gallery"
-                          ? "active"
-                          : ""
-                      }
-                      to="/gallery"
-                    >
-                      Gallery
-                    </Link>
+  to="/gallery"
+  onClick={() => setMenuOpen(false)}
+  className={location.pathname === "/gallery" ? "active" : ""}
+>
+  Gallery
+</Link>
                   </li>
 
                   <li>
-                    <Link to="#">
+                    <Link to="#"onClick={() => setMenuOpen(false)}>
                       Contact
                     </Link>
                   </li>
@@ -157,7 +150,12 @@ function Header() {
                 </ul>
 
               </nav>
-
+              <button
+  className="menu-toggle"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
               {/* Apply Button */}
 
               <Link
@@ -174,6 +172,12 @@ function Header() {
         </div>
 
       </header>
+      {menuOpen && (
+  <div
+    className="menu-overlay"
+    onClick={() => setMenuOpen(false)}
+  />
+)}
     </>
   );
 }

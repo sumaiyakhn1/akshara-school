@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import slider1 from "../assets/images/building.jpg"; 
+import slider2 from "../assets/images/slider2.jpg"; 
+import slider3 from "../assets/images/slider3.jpg"; 
+import slider4 from "../assets/images/slider4.jpg"; 
 
 const slides = [
   {
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop",
+      slider1,
     eyebrow: "Est. in Pehowa — A Family For Learning",
     title1: "Where Every Child",
     title2: "Begins",
@@ -15,8 +19,7 @@ const slides = [
     btn2: "Book Campus Visit",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600&auto=format&fit=crop",
+    image: slider2,
     eyebrow: "Our Campus",
     title1: "A Campus Built",
     title2: "for",
@@ -27,8 +30,7 @@ const slides = [
     btn2: "Gallery",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop",
+    image: slider3,
     eyebrow: "Admissions Open",
     title1: "Admissions",
     title2: "Now",
@@ -40,7 +42,7 @@ const slides = [
   },
   {
   image:
-    "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop",
+    slider4,
   eyebrow: "Beyond the Classroom",
   title1: "Sport, Spirit",
   title2: "and",

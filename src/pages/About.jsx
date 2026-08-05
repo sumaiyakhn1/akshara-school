@@ -1,6 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import principalImg from "../assets/images/principal1.png";
+import aboutImg from "../assets/images/building.jpg";
+import founderImg from "../assets/images/founder.jpg";
+import chairpersonImg from "../assets/images/chairPerson.jpg";
 
 function About() {
   return (
@@ -42,7 +46,7 @@ function About() {
 
               <div className="frame">
                 <img
-                  src="/images/about-school.jpg"
+                  src={aboutImg}
                   alt="Akshara International School"
                 />
               </div>
@@ -180,6 +184,131 @@ function About() {
         </div>
 
       </section>
+      {/* Founder Message */}
+
+<section className="section">
+
+  <div className="container">
+
+    <div className="about-grid">
+
+      <div className="about-media">
+
+        <div className="frame">
+          <img
+            src={founderImg}
+            alt="Founder"
+          />
+        </div>
+
+      </div>
+
+      <div className="about-copy">
+
+        <span className="eyebrow">
+          Founder's Message
+        </span>
+
+        <h2>
+          A Message From Our Founder
+        </h2>
+
+        <p>
+          A very warm welcome to Akshara International School,
+          Pehowa to experience world class education with a
+          difference.
+        </p>
+
+        <p>
+          Here we aim at an educational philosophy centred on
+          praise, encouragement, enthusiasm and affection.
+          We pride ourselves on our happy and nurturing
+          environment which enables every student to achieve
+          the very best.
+        </p>
+
+        <p>
+          Maa Saraswati has blessed us with the opportunity to
+          nurture young learners through innovative ideas,
+          quality education and strong values on the sacred
+          land of Pehowa.
+        </p>
+
+        <div className="quote">
+          Yours Sincerely,<br />
+          <strong>Mr. Baldev Raj Kahra</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* Chairperson Message */}
+
+<section className="section bg-tint">
+
+  <div className="container">
+
+    <div className="about-grid reverse">
+
+      <div className="about-copy">
+
+        <span className="eyebrow">
+          Chairperson's Message
+        </span>
+
+        <h2>
+          Building Bright Futures
+        </h2>
+
+        <p>
+          Akshara International School combines modern
+          infrastructure with innovative teaching methods,
+          sports facilities and meaningful learning
+          opportunities.
+        </p>
+
+        <p>
+          We believe education is not only about academic
+          excellence but also about spiritual, social and
+          personal development. Our aim is to inspire every
+          child to realise his or her true potential.
+        </p>
+
+        <p>
+          We warmly welcome every new student and assure
+          parents that our school provides premium standards
+          of education right here in their hometown.
+        </p>
+
+        <div className="quote">
+          Yours Sincerely,<br />
+          <strong>Mrs. Poonam Kahra</strong>
+        </div>
+
+      </div>
+
+      <div className="about-media">
+
+        <div className="frame">
+
+          <img
+            src={chairpersonImg}
+            alt="Chairperson"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
             {/* Principal Message */}
 
       <section className="section">
@@ -192,7 +321,7 @@ function About() {
 
               <div className="frame">
                 <img
-                  src="/images/principal.jpg"
+                  src={principalImg}
                   alt="Principal"
                 />
               </div>

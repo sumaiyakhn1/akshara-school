@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../assets/images/logo2.png";
 function Footer() {
   return (
     <footer id="foot">
@@ -16,7 +16,7 @@ function Footer() {
 
               <img
                 className="brand-crest"
-                src="/images/logo.png"
+                src={logo}
                 alt="Akshara International School"
                 width="46"
                 height="46"
@@ -103,16 +103,19 @@ function Footer() {
             <ul className="foot-contact">
 
               <li>
-                📍 Ambala Road, Pehowa,
-                Kurukshetra, Haryana
+                📍 Ambala-Kaithal Bypass, Opp. Killa
+Farm Pehowa, Dist. Kurukshetra
+(136128) Haryana
               </li>
 
               <li>
-                📞 +91-XXXXXXXXXX
+                📞 +91-9350889911
+                <br />
+                    +91-9350889922
               </li>
 
               <li>
-                ✉ info@aksharainternationalschool.com
+                ✉ aksharainternationalpehowa@gmail.com
               </li>
 
               <li>

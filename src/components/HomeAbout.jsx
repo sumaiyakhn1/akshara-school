@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-// import founderImg from "../assets/images/founder.jpg";
-// import chairpersonImg from "../assets/images/chairperson.jpg";
-// import principalImg from "../assets/images/principal.jpg";
-// import aboutImg from "../assets/images/about.jpg";
+import founderImg from "../assets/images/founder.jpg";
+import chairpersonImg from "../assets/images/chairPerson.jpg";
+import principalImg from "../assets/images/principal1.png";
+import aboutImg from "../assets/images/building.jpg";
 
 function HomeAbout() {
   return (
@@ -15,7 +15,7 @@ function HomeAbout() {
 
             <div className="frame">
               <img
-                src="/images/about.jpg"
+                src={aboutImg}
                 alt="Akshara International School"
               />
             </div>
@@ -47,16 +47,11 @@ function HomeAbout() {
             </h2>
 
             <p>
-              Set along the Ambala–Kaithal Bypass, Pehowa,
-              Akshara International School provides quality
-              education with modern infrastructure and
-              experienced faculty.
+              Akshara International School a verdant landscape designed aesthetically is the​ perfect blend of style, aesthetics and comfort. The areas have been perfectly​ planned to encompass educational, sports and recreational facilities. Mr. Baldev​ Raj Kahra made a humble attempt of planting a seed in the soil in Pehowa.​ Within a very short span of time, it has grown in stature offering its shade to​ playful children and help nestle many, from far and wide. The school has shaped​ into a vibrant one with all modern amenities and educators collaborating​ actively to actualize a progressive curriculum.
             </p>
 
             <p>
-              We focus on academic excellence, discipline,
-              innovation and holistic development to prepare
-              every child for a successful future.
+              The school aims to create pupils who are successful life-long learners, confident​ individuals and responsible citizens. This level of success can only be achieved​ when a strong partnership between students, staff, parents and the community​ is maintained. With excellent sports facilities, air-conditioned digital classrooms​ activity areas, language lab, state-of-the-art computer and science labs, the ​ school is enthusiasm personified.
             </p>
 
             <div className="quote">
@@ -67,7 +62,7 @@ function HomeAbout() {
             <div className="about-signoff">
 
               <img
-                src="/images/principal.jpg"
+                src={principalImg}
                 alt="Principal"
               />
 
@@ -96,7 +91,7 @@ function HomeAbout() {
   <div className="leader-card">
 
     <img
-      src="/images/founder.jpg"
+      src={founderImg}
       alt="Founder"
       className="leader-img"
     />
@@ -121,7 +116,7 @@ function HomeAbout() {
   <div className="leader-card">
 
     <img
-      src="/images/chairperson.jpg"
+      src={chairpersonImg}
       alt="Chairperson"
       className="leader-img"
     />
@@ -146,7 +141,7 @@ function HomeAbout() {
   <div className="leader-card">
 
     <img
-      src="/images/principal.jpg"
+      src={principalImg}
       alt="Principal"
       className="leader-img"
     />

@@ -348,7 +348,7 @@ footer{background:var(--navy-900);color:rgba(255,255,255,.68);padding-top:90px;}
   .achieve-wrap,.about-grid{grid-template-columns:1fr;}
 }
 @media(max-width:900px){
-  nav.main-nav,.nav-cta .btn{display:none;}
+  /* nav.main-nav,.nav-cta .btn{display:none;} */
   .hamburger{display:flex;}
   .topbar-left{display:none;}
   header.site-header.scrolled{transform:translateY(0);}
@@ -870,8 +870,9 @@ footer{background:var(--navy-900);color:rgba(255,255,255,.68);padding-top:90px;}
   }
 
   .main-nav.active{
+    display:block;
     right:0;
-  }
+}
 
   .main-nav ul{
     display:flex;

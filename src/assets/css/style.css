@@ -781,7 +781,7 @@ footer{background:var(--navy-900);color:rgba(255,255,255,.68);padding-top:90px;}
    MOBILE MENU
 =========================== */
 
-.menu-toggle{
+/* .menu-toggle{
   display:none;
   width:44px;
   height:44px;
@@ -800,8 +800,50 @@ footer{background:var(--navy-900);color:rgba(255,255,255,.68);padding-top:90px;}
   inset:0;
   background:rgba(0,0,0,.45);
   z-index:998;
+} */
+.main-nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+
+    background: #1B2632;   /* Theme Dark Blue */
+
+    transition: .35s ease;
+    z-index: 9999;
+    padding: 90px 30px 40px;
 }
 
+.main-nav.active{
+    right: 0;
+}
+
+.main-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-nav ul li{
+    width: 100%;
+}
+
+.main-nav ul li a{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 18px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active{
+    background: #6B9C3B;
+    color: #fff;
+}
 /* ===========================
    TABLET & MOBILE
 =========================== */
